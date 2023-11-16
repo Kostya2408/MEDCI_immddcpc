@@ -110,8 +110,8 @@ while flag == 0:
                 if counts_obedin[j] > counts_obedin[j - 1]:
                     counts_obedin[j], counts_obedin[j - 1] = counts_obedin[j - 1], counts_obedin[j]
                     items_po_clowno[j], items_po_clowno[j - 1] = items_po_clowno[j - 1], items_po_clowno[j]
-        while chet_vivod <= 10:
+        while chet_vivod < 10:
 
-            print(items_po_clowno[chet_vivod], " ", counts_obedin[chet_vivod])
+            print("ТОП-", chet_vivod+1," ",items_po_clowno[chet_vivod], "число повторов похожих жалоб в базе данных", counts_obedin[chet_vivod])
             chet_vivod += 1
         flag = 1
